@@ -81,6 +81,8 @@
    "options": "Email"
   },
   {
+   "fetch_from": "client.partenaire",
+   "fetch_if_empty": 1,
    "fieldname": "partenaire",
    "fieldtype": "Link",
    "label": "Partenaire",
@@ -131,7 +133,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-14 19:21:38.815080",
+ "modified": "2024-04-14 19:39:43.709018",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Dossier Sante",

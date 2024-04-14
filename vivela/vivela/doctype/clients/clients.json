@@ -11,7 +11,6 @@
   "nom_complet",
   "sexe",
   "column_break_byzg",
-  "type_client",
   "date_naissance",
   "telephone",
   "email",
@@ -22,7 +21,9 @@
   "column_break_xbpg",
   "autorite",
   "adresse_tab",
+  "juridiction",
   "detail_adresse",
+  "column_break_sjpp",
   "commune",
   "wilaya",
   "enfants_tab",
@@ -157,13 +158,15 @@
    "options": "Partenaire"
   },
   {
-   "fieldname": "type_client",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Type Client",
-   "options": "Type Clients",
+   "fieldname": "juridiction",
+   "fieldtype": "Select",
+   "label": "Juridiction",
+   "options": "\nAlger\nOran",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_sjpp",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
@@ -173,7 +176,7 @@
    "link_fieldname": "client"
   }
  ],
- "modified": "2024-04-14 19:32:43.981956",
+ "modified": "2024-04-14 19:38:26.694236",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Clients",

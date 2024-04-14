@@ -10,8 +10,7 @@
   "nom_complet",
   "column_break_xoqe",
   "telephone",
-  "email",
-  "type_partenaire"
+  "email"
  ],
  "fields": [
   {
@@ -43,19 +42,11 @@
   {
    "fieldname": "column_break_xoqe",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "type_partenaire",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Type Partenaire",
-   "options": "Type Clients"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-29 09:54:31.829915",
+ "modified": "2024-04-14 19:34:51.765395",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Partenaire",
