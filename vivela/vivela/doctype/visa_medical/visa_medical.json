@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-25 11:25:04.904684",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vs7v",
+  "client",
+  "etablissement",
+  "service",
+  "amended_from",
+  "column_break_toqr",
+  "telephone",
+  "email_client",
+  "partenaire",
+  "documents_tab",
+  "scans_documents",
+  "frais_tab",
+  "montant_prestation",
+  "devis_tab",
+  "montant_devis"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vs7v",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Visa Medical",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Clients"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Scans Documents"
+  },
+  {
+   "fieldname": "scans_documents",
+   "fieldtype": "Table",
+   "label": "Scans Documents",
+   "options": "Scans Documents"
+  },
+  {
+   "fieldname": "etablissement",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "\u00c9tablissement",
+   "options": "Etablissements"
+  },
+  {
+   "fieldname": "column_break_toqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "frais_tab",
+   "fieldtype": "Tab Break",
+   "label": "Prestations"
+  },
+  {
+   "fieldname": "montant_prestation",
+   "fieldtype": "Currency",
+   "label": "Montant Prestations"
+  },
+  {
+   "fetch_from": "client.email",
+   "fieldname": "email_client",
+   "fieldtype": "Data",
+   "label": "Email Client",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "client.telephone",
+   "fieldname": "telephone",
+   "fieldtype": "Phone",
+   "label": "T\u00e9l\u00e9phone",
+   "read_only": 1
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service",
+   "options": "Services"
+  },
+  {
+   "fieldname": "partenaire",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Partenaire",
+   "options": "Partenaire"
+  },
+  {
+   "fieldname": "devis_tab",
+   "fieldtype": "Tab Break",
+   "label": "Devis"
+  },
+  {
+   "fieldname": "montant_devis",
+   "fieldtype": "Currency",
+   "label": "Montant Devis",
+   "non_negative": 1,
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-29 13:01:39.121629",
+ "modified_by": "Administrator",
+ "module": "Vivela",
+ "name": "Visa Medical",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

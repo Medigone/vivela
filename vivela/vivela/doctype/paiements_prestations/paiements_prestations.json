@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-25 13:07:29.891401",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_paiement",
+  "visa_medical",
+  "client",
+  "column_break_xcmh",
+  "montant_prestation",
+  "montant_restant",
+  "montant_paiement"
+ ],
+ "fields": [
+  {
+   "fetch_from": "visa_medical.client",
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Clients",
+   "read_only": 1
+  },
+  {
+   "fieldname": "visa_medical",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Visa M\u00e9dical",
+   "options": "Visa Medical",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "visa_medical.montant_prestation",
+   "fieldname": "montant_prestation",
+   "fieldtype": "Currency",
+   "label": "Montant Prestation",
+   "precision": "2"
+  },
+  {
+   "fieldname": "montant_paiement",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Montant Paiement",
+   "non_negative": 1,
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_paiement",
+   "fieldtype": "Date",
+   "label": "Date Paiement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xcmh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "montant_restant",
+   "fieldtype": "Currency",
+   "label": "Montant Restant",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-25 13:13:24.501850",
+ "modified_by": "Administrator",
+ "module": "Vivela",
+ "name": "Paiements Prestations",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

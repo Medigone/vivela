@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-25 12:06:44.951220",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "partenaire",
+  "type",
+  "medical",
+  "montant_commission",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "M\u00e9dical\nAdministratif\nImmobilier"
+  },
+  {
+   "fieldname": "medical",
+   "fieldtype": "Link",
+   "label": "N\u00ba Visa M\u00e9dical",
+   "options": "Visa Medical"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Commissions",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "medical.commission",
+   "fieldname": "montant_commission",
+   "fieldtype": "Currency",
+   "label": "Montant Commission",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "partenaire",
+   "fieldtype": "Link",
+   "label": "Partenaire",
+   "options": "Partenaire"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-25 15:49:53.817266",
+ "modified_by": "Administrator",
+ "module": "Vivela",
+ "name": "Commissions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

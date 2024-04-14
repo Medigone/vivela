@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-25 11:53:59.729094",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "service"
+ ],
+ "fields": [
+  {
+   "fieldname": "service",
+   "fieldtype": "Data",
+   "label": "Service"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-27 18:54:43.845061",
+ "modified_by": "Administrator",
+ "module": "Vivela",
+ "name": "Services",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "service",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "service"
+}

@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-25 10:56:12.133974",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "nom",
+  "prenom",
+  "nom_complet",
+  "sexe",
+  "column_break_byzg",
+  "type_client",
+  "date_naissance",
+  "telephone",
+  "email",
+  "mineur",
+  "passeport_tab",
+  "passeport_n",
+  "fin_validite",
+  "autorite",
+  "column_break_xbpg",
+  "adresse_tab",
+  "detail_adresse",
+  "commune",
+  "wilaya",
+  "enfants_tab",
+  "enfants",
+  "source_tab",
+  "partenaire",
+  "scans_documents",
+  "documents"
+ ],
+ "fields": [
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "Pr\u00e9nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom_complet",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nom Complet"
+  },
+  {
+   "fieldname": "passeport_n",
+   "fieldtype": "Data",
+   "label": "N\u00ba Passeport"
+  },
+  {
+   "fieldname": "date_naissance",
+   "fieldtype": "Date",
+   "label": "Date de naissance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sexe",
+   "fieldtype": "Select",
+   "label": "Sexe",
+   "options": "Homme\nFemme",
+   "reqd": 1
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Link",
+   "label": "Commune",
+   "options": "Commune"
+  },
+  {
+   "fetch_from": "commune.wilaya",
+   "fieldname": "wilaya",
+   "fieldtype": "Data",
+   "label": "Wilaya",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_byzg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "T\u00e9l\u00e9phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "detail_adresse",
+   "fieldtype": "Data",
+   "label": "D\u00e9tails Adresse"
+  },
+  {
+   "fieldname": "passeport_tab",
+   "fieldtype": "Tab Break",
+   "label": "Passeport"
+  },
+  {
+   "fieldname": "fin_validite",
+   "fieldtype": "Date",
+   "label": "Date d'expiration"
+  },
+  {
+   "fieldname": "adresse_tab",
+   "fieldtype": "Tab Break",
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "autorite",
+   "fieldtype": "Link",
+   "label": "Autorit\u00e9",
+   "options": "Wilaya"
+  },
+  {
+   "fieldname": "column_break_xbpg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "enfants_tab",
+   "fieldtype": "Tab Break",
+   "label": "Enfants"
+  },
+  {
+   "fieldname": "enfants",
+   "fieldtype": "Table",
+   "label": "Enfants",
+   "options": "Enfants"
+  },
+  {
+   "default": "0",
+   "fieldname": "mineur",
+   "fieldtype": "Check",
+   "label": "Est Mineur ?"
+  },
+  {
+   "fieldname": "source_tab",
+   "fieldtype": "Tab Break",
+   "label": "Partenaire"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "partenaire",
+   "fieldtype": "Link",
+   "label": "Partenaire",
+   "options": "Partenaire"
+  },
+  {
+   "fieldname": "scans_documents",
+   "fieldtype": "Tab Break",
+   "label": "Scans Documents"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "options": "Scans Documents"
+  },
+  {
+   "fieldname": "type_client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type Client",
+   "options": "Type Clients",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Visa Medical",
+   "link_fieldname": "client"
+  }
+ ],
+ "modified": "2024-01-27 20:59:41.814570",
+ "modified_by": "Administrator",
+ "module": "Vivela",
+ "name": "Clients",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "nom_complet",
+ "sort_order": "ASC",
+ "states": [],
+ "title_field": "nom_complet",
+ "track_changes": 1
+}
