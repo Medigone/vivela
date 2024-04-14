@@ -5,17 +5,133 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_sbvi"
+  "date",
+  "column_break_wyqd",
+  "type_dossier",
+  "section_break_otwh",
+  "client",
+  "telephone",
+  "email_client",
+  "column_break_lxfc",
+  "etablissement",
+  "service",
+  "partenaire",
+  "prestations_tab",
+  "montant_prestation",
+  "devis_tab",
+  "montant_devis",
+  "documents_tab",
+  "scans_doc"
  ],
  "fields": [
   {
-   "fieldname": "section_break_sbvi",
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "type_dossier",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type Dossier",
+   "options": "\nVisa M\u00e9dical\nPrises RDV\nAssurance Maladie",
+   "reqd": 1,
+   "sort_options": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Clients",
+   "reqd": 1
+  },
+  {
+   "fieldname": "etablissement",
+   "fieldtype": "Link",
+   "label": "\u00c9tablissement",
+   "options": "Etablissements"
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Services"
+  },
+  {
+   "fieldname": "column_break_lxfc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "client.telephone",
+   "fetch_if_empty": 1,
+   "fieldname": "telephone",
+   "fieldtype": "Data",
+   "label": "T\u00e9l\u00e9phone",
+   "options": "Phone"
+  },
+  {
+   "fetch_from": "client.email",
+   "fetch_if_empty": 1,
+   "fieldname": "email_client",
+   "fieldtype": "Data",
+   "label": "Email Client",
+   "options": "Email"
+  },
+  {
+   "fieldname": "partenaire",
+   "fieldtype": "Link",
+   "label": "Partenaire",
+   "options": "Partenaire"
+  },
+  {
+   "fieldname": "prestations_tab",
+   "fieldtype": "Tab Break",
+   "label": "Prestations"
+  },
+  {
+   "fieldname": "montant_prestation",
+   "fieldtype": "Currency",
+   "label": "Montant Prestations",
+   "precision": "2"
+  },
+  {
+   "fieldname": "devis_tab",
+   "fieldtype": "Tab Break",
+   "label": "Devis"
+  },
+  {
+   "fieldname": "montant_devis",
+   "fieldtype": "Currency",
+   "label": "Montant",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "documents_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "scans_doc",
+   "fieldtype": "Table",
+   "label": "Scans Documents",
+   "options": "Scans Documents"
+  },
+  {
+   "fieldname": "column_break_wyqd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_otwh",
    "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-14 19:01:50.440461",
+ "modified": "2024-04-14 19:21:38.815080",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Dossier Sante",

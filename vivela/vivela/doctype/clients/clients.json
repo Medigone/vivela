@@ -19,8 +19,8 @@
   "passeport_tab",
   "passeport_n",
   "fin_validite",
-  "autorite",
   "column_break_xbpg",
+  "autorite",
   "adresse_tab",
   "detail_adresse",
   "commune",
@@ -28,9 +28,7 @@
   "enfants_tab",
   "enfants",
   "source_tab",
-  "partenaire",
-  "scans_documents",
-  "documents"
+  "partenaire"
  ],
  "fields": [
   {
@@ -159,17 +157,6 @@
    "options": "Partenaire"
   },
   {
-   "fieldname": "scans_documents",
-   "fieldtype": "Tab Break",
-   "label": "Scans Documents"
-  },
-  {
-   "fieldname": "documents",
-   "fieldtype": "Table",
-   "label": "Documents",
-   "options": "Scans Documents"
-  },
-  {
    "fieldname": "type_client",
    "fieldtype": "Link",
    "in_list_view": 1,
@@ -186,7 +173,7 @@
    "link_fieldname": "client"
   }
  ],
- "modified": "2024-01-27 20:59:41.814570",
+ "modified": "2024-04-14 19:32:43.981956",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Clients",
