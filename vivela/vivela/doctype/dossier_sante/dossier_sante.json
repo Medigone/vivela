@@ -13,9 +13,11 @@
   "telephone",
   "email_client",
   "column_break_lxfc",
-  "etablissement",
-  "service",
   "partenaire",
+  "\u00e9tablissement_tab",
+  "etablissement",
+  "column_break_miop",
+  "service",
   "prestations_tab",
   "montant_prestation",
   "devis_tab",
@@ -129,11 +131,20 @@
   {
    "fieldname": "section_break_otwh",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "\u00e9tablissement_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u00c9tablissement"
+  },
+  {
+   "fieldname": "column_break_miop",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-14 19:39:43.709018",
+ "modified": "2024-04-14 19:41:50.981546",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Dossier Sante",
