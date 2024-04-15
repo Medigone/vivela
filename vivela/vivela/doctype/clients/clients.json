@@ -61,15 +61,13 @@
   {
    "fieldname": "date_naissance",
    "fieldtype": "Date",
-   "label": "Date de naissance",
-   "reqd": 1
+   "label": "Date de naissance"
   },
   {
    "fieldname": "sexe",
    "fieldtype": "Select",
    "label": "Sexe",
-   "options": "\nHomme\nFemme",
-   "reqd": 1
+   "options": "\nHomme\nFemme"
   },
   {
    "fieldname": "commune",
@@ -94,8 +92,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "T\u00e9l\u00e9phone",
-   "options": "Phone",
-   "reqd": 1
+   "options": "Phone"
   },
   {
    "fieldname": "detail_adresse",
@@ -159,8 +156,7 @@
    "fieldname": "juridiction",
    "fieldtype": "Select",
    "label": "Juridiction",
-   "options": "\nAlger\nOran",
-   "reqd": 1
+   "options": "\nAlger\nOran"
   },
   {
    "fieldname": "column_break_sjpp",
@@ -180,7 +176,7 @@
    "link_fieldname": "client"
   }
  ],
- "modified": "2024-04-15 12:19:16.156971",
+ "modified": "2024-04-15 12:20:36.192354",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Clients",
