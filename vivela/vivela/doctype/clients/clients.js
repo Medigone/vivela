@@ -6,3 +6,8 @@
 
 // 	},
 // });
+frappe.ui.form.on("Clients", {
+    refresh: function(frm) {
+        frm.set_value("nom_complet", frm.doc.nom + " " + frm.doc.prenom);
+    }
+});
