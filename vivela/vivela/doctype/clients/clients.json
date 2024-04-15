@@ -50,7 +50,8 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Nom Complet",
-   "read_only": 1
+   "read_only": 1,
+   "unique": 1
   },
   {
    "fieldname": "passeport_n",
@@ -179,7 +180,7 @@
    "link_fieldname": "client"
   }
  ],
- "modified": "2024-04-15 11:49:54.737325",
+ "modified": "2024-04-15 12:19:16.156971",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Clients",
