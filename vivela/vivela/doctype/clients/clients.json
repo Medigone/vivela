@@ -150,7 +150,8 @@
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "options": "Email"
   },
   {
    "fieldname": "partenaire",
@@ -177,7 +178,7 @@
    "link_fieldname": "client"
   }
  ],
- "modified": "2024-04-15 11:32:31.571920",
+ "modified": "2024-04-15 11:33:24.275241",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Clients",
