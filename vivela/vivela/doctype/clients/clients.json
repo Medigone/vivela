@@ -28,7 +28,8 @@
   "enfants_tab",
   "enfants",
   "source_tab",
-  "partenaire"
+  "partenaire",
+  "tableau_de_bord_tab"
  ],
  "fields": [
   {
@@ -163,6 +164,12 @@
   {
    "fieldname": "column_break_sjpp",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tableau_de_bord_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tableau de bord",
+   "show_dashboard": 1
   }
  ],
  "index_web_pages_for_search": 1,
@@ -172,7 +179,7 @@
    "link_fieldname": "client"
   }
  ],
- "modified": "2024-04-15 11:42:34.494024",
+ "modified": "2024-04-15 11:49:23.854404",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Clients",
