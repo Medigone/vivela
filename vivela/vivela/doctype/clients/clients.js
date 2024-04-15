@@ -7,7 +7,18 @@
 // 	},
 // });
 frappe.ui.form.on("Clients", {
-    refresh: function(frm) {
-        frm.set_value("nom_complet", frm.doc.nom + " " + frm.doc.prenom);
+    nom: function(frm) {
+        updateNomComplet(frm);
+    },
+    prenom: function(frm) {
+        updateNomComplet(frm);
     }
 });
+
+function updateNomComplet(frm) {
+    let nom = frm.doc.nom || "";
+    let prenom = frm.doc.prenom || "";
+
+    let completeName = (nom + " " + prenom).trim().toUpperCase();
+    frm.set_value("nom_complet", completeName || null);
+}
