@@ -14,7 +14,6 @@
   "date_naissance",
   "telephone",
   "email",
-  "mineur",
   "passeport_tab",
   "passeport_n",
   "fin_validite",
@@ -137,12 +136,6 @@
    "options": "Enfants"
   },
   {
-   "default": "0",
-   "fieldname": "mineur",
-   "fieldtype": "Check",
-   "label": "Est Mineur ?"
-  },
-  {
    "fieldname": "source_tab",
    "fieldtype": "Tab Break",
    "label": "Partenaire"
@@ -178,7 +171,7 @@
    "link_fieldname": "client"
   }
  ],
- "modified": "2024-04-15 11:33:24.275241",
+ "modified": "2024-04-15 11:34:23.375221",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Clients",
