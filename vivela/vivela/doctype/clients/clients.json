@@ -14,6 +14,7 @@
   "date_naissance",
   "telephone",
   "email",
+  "tableau_de_bord_tab",
   "passeport_tab",
   "passeport_n",
   "fin_validite",
@@ -28,8 +29,7 @@
   "enfants_tab",
   "enfants",
   "source_tab",
-  "partenaire",
-  "tableau_de_bord_tab"
+  "partenaire"
  ],
  "fields": [
   {
@@ -179,7 +179,7 @@
    "link_fieldname": "client"
   }
  ],
- "modified": "2024-04-15 11:49:23.854404",
+ "modified": "2024-04-15 11:49:54.737325",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Clients",
