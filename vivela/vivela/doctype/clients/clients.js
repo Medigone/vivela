@@ -6,22 +6,22 @@
 
 // 	},
 // });
-frappe.ui.form.on("Clients", {
-    nom: function(frm) {
-        updateNomComplet(frm);
-    },
-    prenom: function(frm) {
-        updateNomComplet(frm);
-    }
-});
+// frappe.ui.form.on("Clients", {
+//     nom: function(frm) {
+//         updateNomComplet(frm);
+//     },
+//     prenom: function(frm) {
+//         updateNomComplet(frm);
+//     }
+// });
 
-function updateNomComplet(frm) {
-    let nom = frm.doc.nom || "";
-    let prenom = frm.doc.prenom || "";
+// function updateNomComplet(frm) {
+//     let nom = frm.doc.nom || "";
+//     let prenom = frm.doc.prenom || "";
 
-    let completeName = (nom + " " + prenom).trim().toUpperCase();
-    frm.set_value("nom_complet", completeName || null);
-}
+//     let completeName = (nom + " " + prenom).trim().toUpperCase();
+//     frm.set_value("nom_complet", completeName || null);
+// }
 
 frappe.ui.form.on('Clients', {
     refresh(frm) {

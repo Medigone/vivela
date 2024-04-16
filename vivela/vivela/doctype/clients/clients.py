@@ -4,11 +4,7 @@
 import frappe
 from frappe.model.document import Document
 
-
 class Clients(Document):
-	pass
-
-class Clients(Document):
-	def update_nom_complet(self):
-		self.nom_complet = (self.nom + " " + self.prenom).upper()
-		self.save()
+    def update_nom_complet(self):
+        self.nom_complet = (self.nom + " " + self.prenom).upper()
+        self.save()
