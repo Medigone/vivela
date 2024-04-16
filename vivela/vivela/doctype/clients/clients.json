@@ -172,8 +172,29 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-04-15 13:20:00.081288",
+ "links": [
+  {
+   "group": "Liens",
+   "link_doctype": "Dossier Sante",
+   "link_fieldname": "client"
+  },
+  {
+   "group": "Liens",
+   "link_doctype": "Dossier Immigration",
+   "link_fieldname": "client"
+  },
+  {
+   "group": "Liens",
+   "link_doctype": "Dossier Demarches Administratives",
+   "link_fieldname": "client"
+  },
+  {
+   "group": "Liens",
+   "link_doctype": "Dossier Immobilier",
+   "link_fieldname": "client"
+  }
+ ],
+ "modified": "2024-04-16 10:53:50.013613",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Clients",
