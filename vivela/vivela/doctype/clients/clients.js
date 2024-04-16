@@ -34,7 +34,7 @@ frappe.ui.form.on('Clients', {
         }, __('Create'));
 
         // Ajouter un bouton pour Nouvelle Démarche Administrative
-        frm.add_custom_button(__('Nouvelle Démarche Administrative'), function() {
+        frm.add_custom_button(__('Dossier Administratif'), function() {
             frappe.new_doc('Dossier Demarches Administratives', {
                 // Pré-remplissage de quelques champs si nécessaire
                 //prescripteur: frm.doc.name
