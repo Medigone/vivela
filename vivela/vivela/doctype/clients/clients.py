@@ -10,5 +10,5 @@ class Clients(Document):
 
 class Clients(Document):
 	def update_nom_complet(self):
-		self.nom_complet = self.nom + " " + self.prenom
+		self.nom_complet = (self.nom + " " + self.prenom).upper()
 		self.save()
