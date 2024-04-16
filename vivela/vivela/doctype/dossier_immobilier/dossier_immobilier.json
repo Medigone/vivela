@@ -5,17 +5,19 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_5pwm"
+  "client"
  ],
  "fields": [
   {
-   "fieldname": "section_break_5pwm",
-   "fieldtype": "Section Break"
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Clients"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-14 19:00:32.155785",
+ "modified": "2024-04-16 10:45:52.240970",
  "modified_by": "Administrator",
  "module": "Vivela",
  "name": "Dossier Immobilier",
