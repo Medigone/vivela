@@ -25,12 +25,35 @@ function updateNomComplet(frm) {
 
 frappe.ui.form.on('Clients', {
     refresh(frm) {
-        frm.add_custom_button(__('Dossier Médical'), function () {
-            // Logique pour créer une nouvelle commande client
+        // Ajouter un bouton pour Dossier Santé
+        frm.add_custom_button(__('Dossier Santé'), function() {
             frappe.new_doc('Dossier Sante', {
                 // Pré-remplissage de quelques champs si nécessaire
-                //prescripteur: frm.doc.name // Pré-remplir le nom du client dans la nouvelle commande client
-                // Vous pouvez ajouter d'autres champs ici
+                //prescripteur: frm.doc.name
+            });
+        }, __('Create'));
+
+        // Ajouter un bouton pour Nouvelle Démarche Administrative
+        frm.add_custom_button(__('Nouvelle Démarche Administrative'), function() {
+            frappe.new_doc('Dossier Demarches Administratives', {
+                // Pré-remplissage de quelques champs si nécessaire
+                //prescripteur: frm.doc.name
+            });
+        }, __('Create'));
+
+        // Ajouter un bouton pour Dossier Immobilier
+        frm.add_custom_button(__('Dossier Immobilier'), function() {
+            frappe.new_doc('Dossier Immobilier', {
+                // Pré-remplissage de quelques champs si nécessaire
+                //prescripteur: frm.doc.name
+            });
+        }, __('Create'));
+
+        // Ajouter un bouton pour Dossier Immigration
+        frm.add_custom_button(__('Dossier Immigration'), function() {
+            frappe.new_doc('Dossier Immigration', {
+                // Pré-remplissage de quelques champs si nécessaire
+                //prescripteur: frm.doc.name
             });
         }, __('Create'));
     }
