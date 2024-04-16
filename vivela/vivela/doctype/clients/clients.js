@@ -27,7 +27,7 @@ frappe.ui.form.on('Clients', {
     refresh(frm) {
         frm.add_custom_button(__('Dossier Médical'), function () {
             // Logique pour créer une nouvelle commande client
-            frappe.new_doc('Dossier Medical', {
+            frappe.new_doc('Dossier Sante', {
                 // Pré-remplissage de quelques champs si nécessaire
                 //prescripteur: frm.doc.name // Pré-remplir le nom du client dans la nouvelle commande client
                 // Vous pouvez ajouter d'autres champs ici
