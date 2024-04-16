@@ -5,6 +5,6 @@ import frappe
 from frappe.model.document import Document
 
 class Clients(Document):
-    def update_nom_complet(self):
-        self.nom_complet = (self.nom + " " + self.prenom).upper()
-        self.save()
+    def before_save(self):
+        self.nom_complet = f"{self.nom} {self.prenom}".upper()
+
